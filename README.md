@@ -1,12 +1,13 @@
 # Object Detection using Custom Dataset with YOLOv8: Detecting Football Players and Footballs
 Welcome to this tutorial on object detection using a custom dataset with YOLOv8. In this tutorial, we will introduce YOLOv8, Google Open Image V7, and the process of annotating images using CVAT.ai. We will also cover how to take our own photographs, annotate them, create the necessary image and label folders, and train the model using Google Colab. Finally, we'll use OpenCV to process a video and detect football players and footballs.
 
-##Step 1
+## Step 1
 Google Open Image V7 is a  great service that provides over 9M annotated images for object detection with over 600 classes. You can use tools like the Open Images Downloader or scripts provided by the Open Images dataset repository.
 
-###Using Open Images Downloader
+### Using Open Images Downloader
 Install OVID6
-'''python
+
+''' python
 pip install openimages
 '''
 '''python
@@ -14,7 +15,7 @@ openimages downloader --data_dir ./data --class_names "Football","Person"
 '''
 Replace "Football","Person" with the classes you are interested in. This command will download images of soccer balls and people.
 
-##Step 2
+## Step 2
 Now we can annotate the images using cvat.ai 
 first create account and sign up
 Then create a new task
@@ -25,7 +26,7 @@ Use the annotation tools provided by CVAT.ai to draw bounding boxes around footb
 After you have annotated all the images, you can export the annotations in the format needed for training your YOLOv8 model.
 Choose the "YOLO" format to export annotations in a format compatible with YOLO models.
 
-##Step 3
+## Step 3
 Go to Google Drive and Create a New Folder for your Project
 Create a sub folder called data
 Create a two subfolders images and labels
@@ -33,12 +34,12 @@ Create another two subfolders called train and val in both images and labels for
 Upload 80% of the images to images/train and 20% to images/val
 Upload 80% of the annotations to labels/train and 20% to labels/val
 
-##Step 4
+## Step 4
 Copy config.yaml to the root folder
 Copy train.ipynb to the root folder
 Excute train.ipynb
 
-##Step 5 
+## Step 5 
 Create a subfolder called video on root directory
 Upload the Input video to video /folder
 copy object_detection.ipynb to root folder and execute
