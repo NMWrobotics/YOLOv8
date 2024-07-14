@@ -1,0 +1,8 @@
+
+path: /content/drive/MyDrive/Colab Notebooks/YOLO Object Detection/data  # dataset root dir
+train: /content/drive/MyDrive/Colab Notebooks/YOLO Object Detection/data/images/train  # train images (relative to 'path') 128 images
+val: /content/drive/MyDrive/Colab Notebooks/YOLO Object Detection/data/images/val # val images (relative to 'path') 128 images
+
+# Classes
+nc: 2  # number of classes
+names: ['player','football']  # class names
