@@ -7,10 +7,10 @@ Google Open Image V7 is a  great service that provides over 9M annotated images 
 ### Using Open Images Downloader
 Install OVID6
 
-''' python
+'''bash
 pip install openimages
 '''
-'''python
+'''bash
 openimages downloader --data_dir ./data --class_names "Football","Person"
 '''
 Replace "Football","Person" with the classes you are interested in. This command will download images of soccer balls and people.
