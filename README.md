@@ -29,6 +29,8 @@ first create account and sign up
 5. After you have annotated all the images, you can export the annotations in the format needed for training your YOLOv8 model.
 6. Choose the "YOLO" format to export annotations in a format compatible with YOLO models.
 
+## Or you can download the pre annotated data set using this link [Data Set](https://drive.google.com/drive/folders/1klVgfBeeVIw4m_2Y1J_7EvwVabQqV5Ce?usp=sharing)
+
 ## Step 3
 1. Go to Google Drive and Create a New Folder for your Project
 2. Create a sub folder called data
